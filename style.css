@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+section .section {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .section .container-1 {
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+section .section .container-1 .back-image {
+  width: 27%;
+}
+section .section .container-1 .back-image img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+section .section .container-1 .Registration {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12%;
+  text-align: center;
+  padding-top: 20px;
+}
+section .section .container-1 .Registration .apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10%;
+}
+section .section .container-1 .Registration .apps a {
+  font-size: 16px;
+  padding: 15px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+}
+section .section .container-1 .Registration .apps #facebook {
+  background-color: #1877f2;
+}
+section .section .container-1 .Registration .apps #insta {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+section .section .container-1 .Registration .apps #youtube {
+  background-color: #ff0000;
+}
+section .section .container-1 .Registration .head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+}
+section .section .container-1 .Registration .head h3 {
+  font-family: "Ant";
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+section .section .container-1 .Registration button {
+  padding: 7px 24px;
+  border-radius: 20px;
+  border: 1px solid rgb(76, 0, 255);
+  background-color: transparent;
+}
+section .section .container-1 .Registration button span {
+  position: relative;
+  left: 9%;
+  color: rgb(76, 0, 255);
+}
+section .section .container-1 .Registration button i {
+  color: rgb(76, 0, 255);
+  font-size: 15px;
+}
+section .section .container-1 .services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 6px;
+}
+section .section .container-1 .tab-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 17px 0px;
+}
+section .section .container-1 .tab-container .tab {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  gap: 0.2%;
+}
+section .section .container-1 .tab-container .tab .tab-child {
+  padding: 9px;
+  border: 1px solid #dcdcdc;
+}
+section .section .container-1 .tab-container .tab a {
+  text-decoration: none;
+  color: #007bff;
+}
+section .section .container-1 .tab-container .tab a:active {
+  color: green;
+}
+section .section .container-1 .tab-container .tab a:focus {
+  color: green;
+  border-bottom: none;
+}
+section .section .container-1 .tab-container .horizontal-rule {
+  border: none;
+  border-bottom: 1px solid #dcdcdc;
+  width: 100%;
+  max-width: 900px;
+}
+section .section .container-1::before {
+  content: " ";
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  left: 0;
+  height: 82%;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-image: url("./assests/background-image.avif");
+}
+section .second-section {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .second-section .container-2 {
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 0px;
+}
+section .second-section .container-2 .dropdown-container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  gap: 2%;
+  padding-bottom: 3%;
+}
+section .second-section .container-2 .dropdown-container .dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section .second-section .container-2 .dropdown-container .dropdown label {
+  font-size: 18px;
+  color: #007bff;
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section .second-section .container-2 .dropdown-container .dropdown select {
+  width: 29em;
+  height: 4em;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid rgba(41, 196, 41, 0.993);
+  border-radius: 4px;
+  outline: none;
+  color: #333;
+  transition: box-shadow 0.3s ease;
+}
+section .second-section .container-2 .dropdown-container .dropdown select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 2px rgba(0, 123, 255, 0.5);
+}
+section .second-section .container-2 .dropdown-container .dropdown .for-input-text {
+  width: 29em;
+  height: 4em;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid rgba(41, 196, 41, 0.993);
+  border-radius: 4px;
+  outline: none;
+  color: #333;
+  transition: box-shadow 0.3s ease;
+}
+section .second-section .container-2 .dropdown-container .dropdown .for-input-text:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 2px rgba(0, 123, 255, 0.5);
+}
+section .second-section .container-2 .dropdown-container .dropdown .for-single-row {
+  width: 60em;
+  height: 4em;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid rgba(41, 196, 41, 0.993);
+  border-radius: 4px;
+  outline: none;
+  color: #333;
+  transition: box-shadow 0.3s ease;
+}
+section .second-section .container-2 .dropdown-container .dropdown .for-single-row:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 2px rgba(0, 123, 255, 0.5);
+}
+section .second-section .container-2 button {
+  width: 63em;
+  height: 4em;
+  padding: 8px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+}
+section .section-1 {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .section-1 .container {
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  width: 35%;
+  border-radius: 30px;
+  height: 25em;
+  text-align: center;
+  border: 1px solid crimson;
+  padding-top: 15px;
+}
+section .section-1 .container .parent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+section .section-1 .container .parent .parent-input {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .section-1 .container .parent .parent-input div {
+  margin-top: 14px;
+}
+section .section-1 .container .parent .parent-input div button {
+  width: 10em;
+  height: 3em;
+  border-color: #007bff;
+  border-radius: 14px;
+  border: none;
+  background-color: transparent;
+  background-color: #007bff;
+  color: white;
+  font-size: 17px;
+}
+section .section-1 .container .parent .parent-input div button:active {
+  background-color: #0056b3;
+  transform: translateY(2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+section .section-1 .container .parent .parent-input .input-field {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+section .section-1 .container .parent .parent-input .input-field label {
+  font-size: 1.4em;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+section .section-1 .container .parent .parent-input .input-field input {
+  width: 20em;
+  height: 2.8em;
+  padding: 5px;
+  border: 1px solid #007bff;
+  border-radius: 8px;
+  outline: black;
+}
+section .section-1 .container .parent .parent-input .input-field input:focus {
+  border-color: green;
+  box-shadow: 0 0 8px green;
+}
+section .section-1 .container .parent .heading {
+  font-size: 3em;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
